@@ -1,0 +1,30 @@
+.logo__icon {
+  // &.dark {
+  //   fill: var(--color-textdark);
+  // }
+ 
+}
+
+.logo__icon {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    padding-left: 11px;
+    padding-top: 32px;    
+  } 
+  
+  @media screen and (min-width: $decktop) {
+    padding-left: 55px;
+  }  
+
+  &.dark {
+    display: block;
+    fill: var(--color-textdark);
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    } 
+  }
+  
+}

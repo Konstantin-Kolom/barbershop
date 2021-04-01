@@ -1,0 +1,323 @@
+// Шапка - НАВИГАЦИЯ
+
+.header .conteiner {
+  max-width: 480px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    display: flex;
+    padding: 0;
+    // margin: 0;
+  }
+
+  @media screen and (min-width: $decktop) {
+    max-width: 1280px;
+    // display: flex;
+    // padding: 0;
+  }
+}
+
+
+
+// Сайдбар
+.sidebar {
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 680px;
+    margin: 0 30px 0 39px;
+    justify-content: space-between;  
+    background-color: turquoise;
+    align-items: center;
+
+  }
+
+  @media screen and (min-width: $decktop) {
+    // display: flex;
+    // flex-direction: column;
+    width: 155px;
+    height: 680px;
+    // justify-content: space-between;
+    margin: 0;  
+  }
+}
+
+.connect__list {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    transform: rotate(-90deg) translate(50%);
+ 
+  
+    // margin-left: 40px;
+    
+  }
+
+  @media screen and (min-width: $decktop) {
+    // display: flex;
+    // transform: rotate(-90deg) translate(50%);
+
+  
+    margin-left: 40px;
+    
+  }
+}
+
+.element {
+  // fill: red;
+  // width: 100%;
+  // height: 100%;
+}
+
+.connect__item {
+  &:hover,
+  :focus {
+    color: var(--color-active);
+  }
+
+   @media screen and (min-width: $tablet) {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--color-text);
+
+    margin-left: 40px;
+    cursor: pointer;
+    
+  }
+  
+  @media screen and (min-width: $decktop) {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    // color: var(--color-text);
+
+    margin-left: 40px;
+    cursor: pointer;
+    
+  }
+}
+
+
+
+// Врапер
+.heder__wraper {
+  background-image: url(/images/hero/hero3mob.jpg);
+  background-size: cover;
+  width: 480px;
+  height: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(/images/hero/hero3tab.jpg);
+    width: 609px;
+    height: 680px;
+    // margin-right: 0;
+  }
+
+  @media screen and (min-width: $decktop) {
+    background-image: url(/images/hero/hero3.jpg);
+    width: 1125px;
+    // height: 680px;
+    // margin-right: 0;
+  }
+}
+
+
+.slider__nav {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  // @media screen and (min-width: $decktop) {
+  //   display: block;
+  // }
+}
+
+
+
+// НАВ
+.nav__menu {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 39px 0 24px;
+  }
+
+  @media screen and (min-width: $decktop) {
+    margin: 40px 55px 0 40px;
+  }
+}
+
+.nav__list {
+  // display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.nav__item {
+  
+  color: var(--color-textdark);
+
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    margin-right: 24px;
+  }
+
+  @media screen and (min-width: $decktop) {
+    margin-right: 40px;
+  }
+
+
+  &:hover,
+  :focus {
+    color: var(--color-active);
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.contact_list {
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $decktop) {
+    // display: flex;
+    flex-direction: row;
+  }
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+}
+
+.contact_link {
+  color: var(--color-textdark);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+ 
+  &:hover,
+  :focus {
+    color: var(--color-active);
+  }
+  
+}
+
+.contact_list .order-btn {
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $decktop) {
+    margin-left: 40px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+// СЕКЦИЯ Герой
+
+.hero .conteiner  {
+
+  // text-align: center;
+  display: block;
+  
+  @media screen and (min-width: $tablet) {
+    padding-left: 120px;
+    padding-top: 204px;
+  }
+
+  @media screen and (min-width: $decktop) {
+    padding-left: 100px;
+    padding-top: 204px;
+  }
+
+}
+
+
+.hero__secttion {
+  margin-left: 31px;
+  margin-top: 112px;
+}
+
+.title-sect {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #9DA4BD;
+
+  max-width: 306px;
+  margin-top: 20px;
+
+  @media screen and (min-width: $decktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+
+
+// Кнопки меню
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 39px 0px 31px;
+  align-items: center;  
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu_btn {
+  display: block;
+  background-color: transparent;
+  // outline: none;
+  box-sizing: border-box; 
+  border: none;
+  fill: var(--color-textdark);
+  
+
+  &:hover,
+  :focus {
+    fill: var(--color-active);
+  }
+}

@@ -1,0 +1,33 @@
+.menu {
+  @media screen and (min-width: $mobile) {
+    display: none;
+  }
+}
+
+.menu-connect__item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(-color-text);
+  
+}
+
+.menu-nav__item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: var(-color-text);
+
+  &.active {
+    color: var(--color-active);
+  }
+}
+
+.mune-contact_item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: var(-color-text);
+}

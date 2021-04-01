@@ -1,0 +1,38 @@
+.order-btn {
+  display: block;
+  background-color: transparent;
+  
+  outline: none;
+  box-sizing: border-box; 
+  border-radius: 25px;
+  border: 1px solid #FF6C00;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 12px 20px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+}
+
+.order-btn.dark {
+  color: var(--color-textbtn);
+  background-color: transparent;
+ 
+  &:hover {
+    color: var(--color-textbtn);
+    background-color: var(--active_backg);
+  }
+}
+
+.order-btn.light {
+  color: var(--color-text);
+  background-color: transparent;
+
+  &:hover {
+    color: var(--color-textbtn);
+    background-color: var(--active_backg);
+  }
+}
